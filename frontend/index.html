@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniAssist - University Document Organizer</title>
+    <meta name="description" content="UniAssist helps university students organize and find educational documents and resources easily.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>UniAssist</h1>
+        <h6>Find notes, documents, and PPTs of your university</h6>
+    </header>
+    <main>
+        <section aria-labelledby="search-section">
+            <form id="search-form">
+                <label for="university">Select your University:</label>
+                <input type="text" id="university" name="university" placeholder="Enter university name" list="university-list">
+                <datalist id="university-list">
+                    <!-- Predefined university options will go here -->
+                </datalist>
+
+                <label for="course">Select your Course:</label>
+                <input type="text" id="course" name="course" placeholder="Enter course name" list="course-list">
+                <datalist id="course-list">
+                    <!-- Predefined course options will go here -->
+                </datalist>
+
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                    <option value="5th Year">5th Year</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 UniAssist. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
